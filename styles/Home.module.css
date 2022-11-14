@@ -1,8 +1,8 @@
-.container {
-  padding: 0 2rem;
-}
+ .container {
+  padding: 0;
+} 
 
-.main {
+/* .main {
   min-height: 100vh;
   padding: 4rem 0;
   flex: 1;
@@ -107,6 +107,15 @@
   height: 1em;
   margin-left: 0.5rem;
 }
+/* 
+.carouselAlignment{
+  justify-content: center;
+  align-items:center;
+  text-align: center;
+
+} */
+
+
 
 @media (max-width: 600px) {
   .grid {

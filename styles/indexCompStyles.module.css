@@ -1,28 +1,56 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap'); */
+/* Sans Serif font typographgy */
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 
+/* logo font */
+/* font-family: 'Sacramento', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 
+.logoStyle{
+    font-family: 'Sacramento', cursive;
+    margin-top: 16.69px;
+    margin-bottom: 16.69px;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+
+}
+
+ .carouselStyle{
+  height: 750px;
+  width: 100%;
+  margin-top: 16.69px;
+  margin-bottom: 16.69px;
+  justify-content: center;
+  align-items:center;
+  text-align: center;
+  /* margin: 50px; */}
+ 
 
 .navStyle{
-    text-align: center;
-    font-size: x-large;
-    /*base color of the site*/
-    background-color: #628D95;
     justify-content: center;
+    text-align: center;
+    font-size: large;
+    /*base color of the site*/
+    background-color: #F7F7DF;
     border-style: solid;
     border-width: .6pt;
+    width: 100%;
     /* https://gomakethings.com/how-to-create-a-sticky-navigation-with-only-css/ */
     position: -webkit-sticky;
 	position: sticky;
 	top: 0;
-    z-index: 100;
+    z-index: 3;
     font-family: 'Aboreto', cursive;
+    /* margin-bottom: 50px; */
 }
 
 .containerStyle{
     justify-content: center;
-    margin-right: 15px;
+    /* margin: 15px; */
     border-style: solid;
     border-width: .6pt;
+    background-color: #F7F7DF;
   
 }
 
@@ -37,13 +65,15 @@
 }
 
 .imagePadding{
-    margin: 8.69px;
-
-}
+    margin-top: 8.69px;
+    margin-bottom: 8.69px;
+} 
 
 .navLinks{
-    margin-left: 10.69px;
-    margin-right: 10.69px;
+    margin-left: 50.69px;
+    margin-right: 50.69px;
+    color: black;
+    text-decoration: none;
 
 }
 

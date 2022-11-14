@@ -10,6 +10,8 @@ import Link from "next/link";
 import Router from "next/router";
 import {
   imagePadding,
+  logoStyle,
+  carouselStyle,
   rowStyle,
   imageBorder,
   containerStyle,
@@ -34,20 +36,83 @@ import {
 function NavBar() {
   return (
     <Nav className={navStyle}>
-      <Link href="undefined">Home</Link>
-
       <Link href="undefined">
-        <a className={navLinks}>About Us </a>
+        <span className={navLinks}> Home </span>
       </Link>
 
       <Link href="undefined">
-        <a className={navLinks}> Wedding Photographers</a>
+        <span className={navLinks}> About Us </span>
       </Link>
 
       <Link href="undefined">
-        <a className={navLinks}> BOOK FOR YOUR WEDDING</a>
+        <span className={navLinks}> Our Wedding Photographers </span>
+      </Link>
+
+      <Link href="undefined">
+        <span className={navLinks}>BOOK FOR YOUR WEDDING</span>
       </Link>
     </Nav>
+  );
+}
+
+function Logo() {
+  return <h1 className={logoStyle}> Wedding Photographs, LLC </h1>;
+}
+
+function PhotoCarousel() {
+  return (
+    <Container className={carouselStyle}>
+      <Row>
+        <Col>
+          <Carousel>
+            <Carousel.Item>
+              <Image
+                className={imagePadding}
+                src="/assets/HomepageCarousel/holdingHands.jpg"
+                alt="First slide"
+                fluid
+              />
+              <Carousel.Caption>
+                <h3>First slide label</h3>
+                <p>
+                  Nulla vitae elit libero, a pharetra augue mollis interdum.
+                </p>
+              </Carousel.Caption>
+            </Carousel.Item>
+
+            <Carousel.Item>
+              <Image
+                className={imagePadding}
+                src="/assets/HomepageCarousel/placeSetting.jpg"
+                alt="First slide"
+                fluid
+              />
+
+              <Carousel.Caption>
+                <h3>Second slide label</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <Image
+                className={imagePadding}
+                src="/assets/HomepageCarousel/weddingShoes.jpg"
+                alt="First slide"
+                fluid
+              />
+
+              <Carousel.Caption>
+                <h3>Third slide label</h3>
+                <p>
+                  Praesent commodo cursus magna, vel scelerisque nisl
+                  consectetur.
+                </p>
+              </Carousel.Caption>
+            </Carousel.Item>
+          </Carousel>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
@@ -119,7 +184,8 @@ function Footer() {
         <Row>
           <Col>
             {" "}
-            Copyrights © Photography Studio 2021 Portland Wedding Photographers
+            Copyrights © Photography Studio 2021 West Coast Wedding
+            Photographers
           </Col>
         </Row>
         <Row>
@@ -135,4 +201,4 @@ function Footer() {
 }
 
 // 👇️ named exports
-export { NavBar, PhotoContainer, EmailForm, Footer };
+export { NavBar, PhotoCarousel, Logo, PhotoContainer, EmailForm, Footer };
