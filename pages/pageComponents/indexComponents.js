@@ -12,8 +12,6 @@ import {
   imagePadding,
   logoStyle,
   carouselStyle,
-  rowStyle,
-  imageBorder,
   containerStyle,
   footerStyle,
   formStyle,
@@ -64,7 +62,7 @@ function PhotoCarousel() {
     <Container className={carouselStyle}>
       <Row>
         <Col>
-          <Carousel>
+          <Carousel fluid>
             <Carousel.Item>
               <Image
                 className={imagePadding}
@@ -121,37 +119,55 @@ function PhotoContainer() {
     <div>
       <Container className={containerStyle} fluid>
         <Row>
-          <Col xs="12" md="4">
-            <Image className={imagePadding} src="/assets/wedPhoto1.jpg" fluid />
-          </Col>
-          <Col xs="12" md="4">
-            <Image className={imagePadding} src="/assets/wedPhoto2.jpg" fluid />
-          </Col>
-          <Col xs="12" md="4">
-            <Image className={imagePadding} src="/assets/wedPhoto3.jpg" fluid />
-          </Col>
-        </Row>
-
-        <Row>
-          <Col xs="12" md="4">
+          <Col xs="12" md="6">
             <Image className={imagePadding} src="/assets/wedPhoto4.jpg" fluid />
+            <h1>First Caption</h1>
           </Col>
-          <Col xs="12" md="4">
-            <Image className={imagePadding} src="/assets/wedPhoto5.jpg" fluid />{" "}
-          </Col>
-          <Col xs="12" md="4">
-            <Image className={imagePadding} src="/assets/wedPhoto6.jpg" fluid />
+          <Col xs="12" md="6">
+            <p>
+              Phasellus volutpat lectus convallis, porta turpis at, mattis nibh.
+              Donec porta dignissim justo, vel efficitur nisi lacinia ac. Duis
+              ut odio pretium, blandit dui at, tristique est. Vestibulum in erat
+              elit. Sed ut aliquet ipsum, et rutrum quam. Praesent tincidunt
+              pharetra elit quis efficitur. In tempor orci mattis purus euismod
+              pellentesque. Ut cursus dolor eu tempor aliquam.
+            </p>
           </Col>
         </Row>
+      </Container>
+
+      <Container className={containerStyle} fluid>
         <Row>
-          <Col xs="12" md="4">
+          <Col xs="12" md="6">
+            <Image className={imagePadding} src="/assets/wedPhoto5.jpg" fluid />
+            <h1>Second Caption</h1>
+          </Col>
+          <Col xs="12" md="6">
+            <p>
+              Phasellus volutpat lectus convallis, porta turpis at, mattis nibh.
+              Donec porta dignissim justo, vel efficitur nisi lacinia ac. Duis
+              ut odio pretium, blandit dui at, tristique est. Vestibulum in erat
+              elit. Sed ut aliquet ipsum, et rutrum quam. Praesent tincidunt
+              pharetra elit quis efficitur. In tempor orci mattis purus euismod
+              pellentesque. Ut cursus dolor eu tempor aliquam.
+            </p>
+          </Col>
+        </Row>
+      </Container>
+
+      <Container className={containerStyle} fluid>
+        <Row>
+          <Col xs="12" md="6">
             <Image className={imagePadding} src="/assets/wedPhoto7.jpg" fluid />
+            <h1>Third Caption</h1>
           </Col>
-          <Col xs="12" md="4">
-            <Image className={imagePadding} src="/assets/wedPhoto8.jpg" fluid />
-          </Col>
-          <Col xs="12" md="4">
-            <Image className={imagePadding} src="/assets/wedPhoto9.jpg" fluid />
+          <Col xs="12" md="6">
+            Phasellus volutpat lectus convallis, porta turpis at, mattis nibh.
+            Donec porta dignissim justo, vel efficitur nisi lacinia ac. Duis ut
+            odio pretium, blandit dui at, tristique est. Vestibulum in erat
+            elit. Sed ut aliquet ipsum, et rutrum quam. Praesent tincidunt
+            pharetra elit quis efficitur. In tempor orci mattis purus euismod
+            pellentesque. Ut cursus dolor eu tempor aliquam.
           </Col>
         </Row>
       </Container>

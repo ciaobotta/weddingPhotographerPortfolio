@@ -17,7 +17,7 @@
 }
 
  .carouselStyle{
-  height: 750px;
+  height: 85%;
   width: 100%;
   margin-top: 16.69px;
   margin-bottom: 16.69px;
@@ -46,28 +46,32 @@
 }
 
 .containerStyle{
+    width: 75%;
+    height: auto;
     justify-content: center;
-    /* margin: 15px; */
+    /* align-items:center; */
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom:15px;
     border-style: solid;
     border-width: .6pt;
     background-color: #F7F7DF;
+    border-radius: 30px;
+    padding: 6.9%;
   
 }
 
-.imageBorder{
-    border-style: solid;
-    border-width: 6px;  
-    border-color: pink; 
-}
 
-.rowStyle{
-    margin-left: 5 px;
-}
 
-.imagePadding{
-    margin-top: 8.69px;
-    margin-bottom: 8.69px;
-} 
+  .imagePadding{
+   width: 75%;
+  
+   height: auto;
+ 
+   padding-top: .25rem;
+   
+   
+}
 
 .navLinks{
     margin-left: 50.69px;
